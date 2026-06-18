@@ -1,0 +1,12 @@
+[init]
+	defaultBranch = main
+
+[user]
+	name = Kangsan Kim
+	email = tech.kimu@gmail.com
+
+[alias]
+	s = status
+	ss = status short
+	l = log
+	lo = log --oneline
