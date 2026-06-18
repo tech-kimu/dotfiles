@@ -7,6 +7,6 @@
 
 [alias]
 	s = status
-	ss = status short
+	ss = status --short
 	l = log
 	lo = log --oneline
