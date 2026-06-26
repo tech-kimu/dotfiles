@@ -1,14 +1,9 @@
-# [general]
-# import = [ "//wsl.localhost/archlinux/home/kangsan/.config/alacritty/alacritty.toml" ]
-
-[terminal]
-shell = { program = "wsl.exe", args = ["-d", "archlinux", "--cd", "~"] }
-
 [window]
 dynamic_padding = true
 title = "Terminal"
 dynamic_title = false
 decorations = "None"
+opacity = 0.95
 
 [mouse]
 hide_when_typing = true
@@ -19,8 +14,8 @@ blink_interval = 500
 blink_timeout = 0
 
 [font]
-normal = { family = "unifont" }
-size = 14
+#normal = { family = "unifont" }
+size = 13
 
 [colors.primary]
 foreground = "#fdfdfd"
@@ -28,7 +23,7 @@ background = "#000000"
 
 [colors.normal]
 black	= "#222222"
-red	= "#f01818"
+red		= "#f01818"
 green	= "#24d830"
 yellow	= "#f0d824"
 blue	= "#7890f0"
@@ -38,7 +33,7 @@ white	= "#a5a5a5"
 
 [colors.bright]
 black	= "#888888"
-red	= "#ef8383"
+red		= "#ef8383"
 green	= "#7ed684"
 yellow	= "#efe28b"
 blue	= "#b3bfef"

@@ -5,13 +5,6 @@ alias ls='ls --color=auto --human-readable'
 alias grep='grep --color=auto'
 alias vim='nvim'
 alias tree='tree -C'
-
-BLUE="\[$(tput setaf 4)\]"
-RESET="\[$(tput sgr0)\]"
-PS1="${BLUE}\w${RESET} "
-
+export EDITOR='nvim'
+PS1="\w\$ "
 eval "$(fzf --bash)"
-
-#if [[ -z $TMUX ]]; then
-#	exec tmux
-#fi
