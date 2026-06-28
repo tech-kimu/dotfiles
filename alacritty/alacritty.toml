@@ -3,7 +3,7 @@ dynamic_padding = true
 title = "Terminal"
 dynamic_title = false
 decorations = "None"
-opacity = 0.95
+opacity = 0.75
 
 [mouse]
 hide_when_typing = true
@@ -43,7 +43,7 @@ white	= "#ffffff"
 
 [keyboard]
 bindings = [
-#{ key = "F11", action = "ToggleFullscreen" },
+{ key = "F11", action = "ToggleFullscreen" },
 { key = "PageUp", action = "ScrollHalfPageup" },
 { key = "PageDown", action = "ScrollHalfPagedown" },
 { key = "Home", action = "ScrollToTop" },

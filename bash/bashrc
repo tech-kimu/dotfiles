@@ -5,6 +5,7 @@ alias ls='ls --color=auto --human-readable'
 alias grep='grep --color=auto'
 alias vim='nvim'
 alias tree='tree -C'
+export PATH=${PATH}:${HOME}'/Script'
 export EDITOR='nvim'
 PS1="\w\$ "
 eval "$(fzf --bash)"
