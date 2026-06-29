@@ -1,0 +1,13 @@
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": [],
+	"modules-center": ["clock"],
+	"modules-right": ["battery"],
+	"clock": {
+		"format": "{:%H:%M %p}"
+	},
+	"battery": {
+		"format": "{capacity}%"
+	}
+}
