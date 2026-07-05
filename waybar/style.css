@@ -1,0 +1,39 @@
+* {
+	font-size: 15px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+.modules-left {
+	background: black;
+	color: white;
+	padding: 0 1em;
+	border-radius: 1em;
+}
+
+.modules-center {
+	background: black;
+	color: white;
+	padding: 0 4em;
+	border-radius: 1em;
+}
+
+.modules-right {
+	background: black;
+	color: white;
+	padding: 0 1em;
+	border-radius: 1em;
+}
+
+#workspaces button.active {
+	color:white;
+}
+
+/*box.module {
+	border: solid 1px white;
+}
+*label.module {
+	border: solid 1px green;
+}*/

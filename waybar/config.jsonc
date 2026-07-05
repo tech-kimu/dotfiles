@@ -1,13 +1,56 @@
 {
 	"layer": "top",
 	"position": "top",
-	"modules-left": [],
-	"modules-center": ["clock"],
-	"modules-right": ["battery"],
+	"reload_style_on_change": true,
+	"margin-top": 5,
+	"margin-left": 10,
+	"margin-right": 10,
+	"spacing": 20,
+	"modules-left": [
+		"custom/wallpaper",
+		"hyprland/workspaces"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"tray",
+		"wireplumber",
+		"backlight",
+		"network",
+		"battery"
+	],
+	"hyprland/workspaces": {
+		"format": "{id} {windows}",
+		"persistent-workspaces": {
+			"*": 4
+		},
+		"window-rewrite": {
+			"class<firefox>": "󰈹",
+			"class<alacritty>": "",
+			"class<obsidian>": "󰴓"
+		}
+	},
+	"custom/wallpaper": {
+		"format": "",
+		"on-click": "wpaperctl next"
+	},
+	"tray": {
+	},
+	"wireplumber": {
+		"format": "󰋋 {volume}%",
+		"format-muted": "󰟎 음소거"
+	},
+	"backlight": {
+		"format": "󰛨 {percent}%"
+	},
+	"network": {
+		"format": "󱄙 {essid}"
+	},
 	"clock": {
 		"format": "{:%H:%M %p}"
 	},
 	"battery": {
-		"format": "{capacity}%"
+		"format": "󰄌 {capacity}%"
 	}
 }

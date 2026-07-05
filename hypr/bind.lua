@@ -6,4 +6,17 @@ hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl set +10%"), {repea
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 10%-"), {repeating = true})
 hl.bind("SUPER+SUPER_L", hl.dsp.exec_cmd("pkill fuzzel || fuzzel"), {release = true})
 hl.bind("CTRL+ALT+DELETE", hl.dsp.exec_cmd("hyprctl dispatch 'hl.dsp.exit()'"))
---hl.bind("ALT+TAB", hl.dsp.window.cycle_next())
+
+hl.bind("ALT+TAB", hl.dsp.window.cycle_next())
+hl.bind("SUPER+LEFT", hl.dsp.focus({direction = "left"}))
+hl.bind("SUPER+RIGHT", hl.dsp.focus({direction = "right"}))
+hl.bind("SUPER+UP", hl.dsp.focus({direction = "up"}))
+hl.bind("SUPER+DOWN", hl.dsp.focus({direction = "down"}))
+
+for i = 1, 4 do
+	hl.bind("SUPER+"..i, hl.dsp.focus({workspace = i}))
+	hl.bind("SUPER+SHIFT+"..i, hl.dsp.window.move({workspace = i}))
+end
+
+--hl.bind("mouse:272", hl.dsp.window.drag(), {mouse = true})
+--hl.bind("mouse:273", hl.dsp.window.resize(), {mouse = true})
