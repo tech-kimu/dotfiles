@@ -28,29 +28,36 @@
 		"window-rewrite": {
 			"class<firefox>": "󰈹",
 			"class<alacritty>": "",
-			"class<obsidian>": "󰴓"
+			"class<obsidian>": "󰴓",
+			"class<pcmanfm>": ""
 		}
 	},
 	"custom/wallpaper": {
 		"format": "",
-		"on-click": "wpaperctl next"
+		"on-click": "wpaperctl next",
+		"tooltip": false
 	},
 	"tray": {
 	},
 	"wireplumber": {
 		"format": "󰋋 {volume}%",
-		"format-muted": "󰟎 음소거"
+		"format-muted": "󰟎 음소거",
+		"tooltip": false
 	},
 	"backlight": {
-		"format": "󰛨 {percent}%"
+		"format": "󰛨 {percent}%",
+		"tooltip": false
 	},
 	"network": {
-		"format": "󱄙 {essid}"
+		"format": "󱄙 {essid}",
+		"tooltip": false
 	},
 	"clock": {
-		"format": "{:%H:%M %p}"
+		"format": "{:%H:%M %p}",
+		"tooltip": false
 	},
 	"battery": {
-		"format": "󰄌 {capacity}%"
+		"format": "󰄌 {capacity}%",
+		"tooltip": false
 	}
 }

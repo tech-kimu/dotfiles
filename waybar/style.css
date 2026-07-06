@@ -1,5 +1,5 @@
 * {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 window#waybar {
@@ -7,33 +7,41 @@ window#waybar {
 }
 
 .modules-left {
-	background: black;
+	background: rgba(0, 0, 0, .8);
 	color: white;
 	padding: 0 1em;
 	border-radius: 1em;
 }
 
 .modules-center {
-	background: black;
+	background: rgba(0, 0, 0, .8);
 	color: white;
 	padding: 0 4em;
 	border-radius: 1em;
 }
 
 .modules-right {
-	background: black;
+	background: rgba(0, 0, 0, .8);
 	color: white;
 	padding: 0 1em;
 	border-radius: 1em;
 }
 
 #workspaces button.active {
-	color:white;
+	color: white;
+}
+
+#workspaces button:not(.active) {
+	color: dimgray;
+}
+
+#workspaces button:hover {
+	color: black;
 }
 
 /*box.module {
 	border: solid 1px white;
-}
-*label.module {
+}*/
+/*label.module {
 	border: solid 1px green;
 }*/

@@ -2,11 +2,12 @@
 import = [ "~/.config/alacritty/themes/breeze.toml" ]
 
 [window]
+padding = { x = 4 }
 dynamic_padding = true
 title = "Terminal"
 dynamic_title = false
 decorations = "None"
-opacity = 0.75
+opacity = 0.8
 
 [cursor]
 style = { shape = "Block", blinking = "Always" }
@@ -14,7 +15,6 @@ blink_interval = 500
 blink_timeout = 0
 
 [font]
-#normal = { family = "unifont" }
 size = 13
 
 [keyboard]
