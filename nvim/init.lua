@@ -1,17 +1,10 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.swapfile = false
-vim.opt.wrap = false
-vim.opt.splitright = true
-vim.opt.splitbelow = true
-vim.opt.termguicolors = true
+require("options")
+require("lsp")
+require("colorscheme")
 
-vim.cmd.colorscheme("vim")
-
+-- Plugins
 vim.pack.add({
-	"https://github.com/catgoose/nvim-colorizer.lua"
+	"https://github.com/catgoose/nvim-colorizer.lua",
 })
-
 require("colorizer").setup()
+

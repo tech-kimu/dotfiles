@@ -30,7 +30,8 @@
 			"class<alacritty>": "",
 			"class<obsidian>": "󰴓",
 			"class<pcmanfm>": ""
-		}
+		},
+		"on-click": "active"
 	},
 	"custom/wallpaper": {
 		"format": "",
